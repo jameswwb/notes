@@ -1,7 +1,7 @@
 
-# Sliming log
+# *Love On a Diet*
 
-[点击跳转](#jump)
+<h1 id="1">目录</h1>
 
 ## 2018-10-12
 
@@ -66,5 +66,4 @@
 ```
 苹果/梨/柚子/橙子/橘子
 ```
-
-<span id="jump">Hello World</span>
+[目录](#1)
