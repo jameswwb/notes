@@ -1,6 +1,8 @@
 ## 安装环境
 1. 创建虚拟环境
 
+> set CONDA_FORCE_32BIT=1
+
 ```
 # 创建 conda 虚拟环境（ :code:`env_name` 是您希望创建的虚拟环境名）
 $ conda create --name env_name python=3.5
@@ -60,3 +62,28 @@ rqalpha run -f C:\ProgramData\Anaconda3\envs\rqalpha\Lib\site-packages\rqalpha\e
 
 
 set pythonpath=C:\ProgramData\Anaconda3\envs\vnpy27\Lib\site-packages\vnpy-1.9.2-py2.7.egg\vnpy\trader\app\algoTrading\algo;C:\ProgramData\Anaconda3\envs\vnpy27\Lib\site-packages\vnpy-1.9.2-py2.7.egg\vnpy\trader\app\ctaStrategy\strategy
+
+
+
+
+
+
+conda-env remove --name vnpy27
+
+> set CONDA_FORCE_32BIT=1
+
+conda create --name vnpy27 python=2.7
+
+conda create -n vnpy27 python=2.7
+
+pip install -r requirements.txt
+pip install TA_Lib-0.4.17-cp27-cp27m-win32.whl
+pip install PyQt4-4.11.4-cp27-cp27m-win32.whl
+pip install PySide-1.2.4-cp27-cp27m-win32.whl
+pip install enum
+pip install typing
+pip install zmq
+
+乱码问题
+cmd terminal : chcp 35001
+
