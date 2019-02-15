@@ -83,7 +83,24 @@ pip install PySide-1.2.4-cp27-cp27m-win32.whl
 pip install enum
 pip install typing
 pip install zmq
+pip install python-qt5
 
 乱码问题
-cmd terminal : chcp 35001
+cmd terminal : chcp 65001
 
+
+vnpy27.code-workspace - office
+{
+	"folders": [
+		{
+			"path": "vnpy"
+		}
+	],
+	"settings": {
+		"python.pythonPath": "C:\\ProgramData\\Anaconda3\\envs\\vnpy27\\python.exe",		
+		"python.linting.pylintEnabled": true,
+		"terminal.integrated.env.windows": {
+			"PYTHONPATH":"F:\\Gitee\\VNMod\\vnpy;F:\\Gitee\\VNMod\\vnpy\\vnpy\\trader\\app\\algoTrading\\algo;F:\\Gitee\\VNMod\\vnpy\\vnpy\\trader\\app\\ctaStrategy\\strategy"
+		}
+	},
+}
