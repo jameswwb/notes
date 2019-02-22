@@ -1,4 +1,101 @@
-## 安装环境
+## vnpy 运行
+
+1. 账号配置
+
+```
+申请simnow 账号， 配置交易服务器和行情服务器地址。
+.\vnpy\trader\gateway\ctpGateway\CTP_connect.json
+{
+    "brokerID": "9999", 
+    "mdAddress": "tcp://180.168.146.187:10010", 
+    "tdAddress": "tcp://180.168.146.187:10000", 
+    "userID": "132654",
+    "password": "Gemalto,123"    
+}
+```
+2. 策略配置
+
+```
+.\vnpy\trader\app\ctaStrategy\CTA_setting.json
+[
+    {
+        "name": "king keltner",
+        "className": "KkStrategy",
+        "vtSymbol": "rb1905"
+    }
+]
+```
+
+
+
+## vnpy 安装环境
+
+1. 安装anaconda
+
+```
+安装 Anaconda2-5.2.0-Windows-x86.exe  （所有option 全部disable）
+pip install -r requirements.txt
+pip install TA_Lib-0.4.17-cp27-cp27m-win32.whl
+```
+
+2. vscode 设置
+
+```
+vnpy27.code-workspace - office
+{
+	"folders": [
+		{
+			"path": "vnpy"
+		}
+	],
+	"settings": {
+		"python.pythonPath": "D:\\Anaconda2\\python.exe",		
+		"python.linting.pylintEnabled": true,
+		"terminal.integrated.env.windows": {
+			"PYTHONPATH":"F:\\Gitee\\VNMod\\vnpy;F:\\Gitee\\VNMod\\vnpy\\vnpy\\trader\\app\\algoTrading\\algo;F:\\Gitee\\VNMod\\vnpy\\vnpy\\trader\\app\\ctaStrategy\\strategy"
+		}
+	},
+}
+```
+
+3. 乱码问题
+cmd terminal : chcp 65001
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 1. 创建虚拟环境
 
 > set CONDA_FORCE_32BIT=1
