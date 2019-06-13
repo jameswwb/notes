@@ -3,7 +3,7 @@
 
 ```
 进入目录：
-.\ClawWork
+.\Gitee\VNMod\vnpy\zzmod\dataclaw
 启动服务器：
 python web_clawhost.py
 ```
